@@ -1,0 +1,7 @@
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso Java', 100, 2000)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso Pyhton', 20, 200)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso Spring', 40, 1500)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso SQL', 175, 4600)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso Mindfulnes', 8, 0)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso IA', 100, 20000)
+INSERT INTO curso (nombre, duracion, precio) VALUES ('Curso Redes', 80, 1000)
