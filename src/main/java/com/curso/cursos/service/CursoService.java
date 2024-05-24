@@ -12,6 +12,6 @@ public interface CursoService {
 	void update(Curso curso);
 	void delete(Integer codigo);
 	void updateDuracion(Integer codigo, Integer duracion);
-	List<Curso> findBetweenPrecio(Integer min, Integer max);
+	List<Curso> findByPrecioBetween(Integer min, Integer max);
 	
 }

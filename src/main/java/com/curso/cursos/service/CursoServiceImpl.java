@@ -43,14 +43,21 @@ public class CursoServiceImpl implements CursoService {
 		dao.deleteById(codigo);
 	}
 
+	/**
+	 * Funcion que obtiene primero el curso a partir de su codigo y actualiza su 
+	 * duracion si es diferente
+	 */
 	@Override
 	@Transactional
 	public void updateDuracion(Integer codigo, Integer duracion) {
-		findById(codigo).ifPresent( c -> c.setDuracion(duracion));
+		findById(codigo).ifPresent( c -> c.setDuracion(duracion) );
 	}
 	
-	public List<Curso> findBetweenPrecio(Integer min, Integer max){
-		return dao.findBetweenPrecio(min, max);
+	/**
+	 * Funcion que devuelve todos los cursos entre 2 precios incluidos
+	 */
+	public List<Curso> findByPrecioBetween(Integer min, Integer max){
+		return dao.findByPrecioBetween(min, max);
 	}
 
 }

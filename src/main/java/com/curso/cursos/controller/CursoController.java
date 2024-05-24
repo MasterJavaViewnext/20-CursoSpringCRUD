@@ -55,8 +55,8 @@ public class CursoController {
 	}
 	
 	@GetMapping(value = "precio", produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<Curso> findBetweenPrecio(@RequestParam("min") Integer min, @RequestParam("max") Integer max){
-		return service.findBetweenPrecio(min, max);
+	public List<Curso> findByPrecioBetween(@RequestParam("min") Integer min, @RequestParam("max") Integer max){
+		return service.findByPrecioBetween(min, max);
 	}
 	
 }
